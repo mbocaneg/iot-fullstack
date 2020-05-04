@@ -1,5 +1,5 @@
 # iot-fullstack
-A full-stack front-end/back-end solution for IOT purposes.
+A full-stack front-end/back-end IOT solution that logs weather data from connected sensors. Consists of a backend that logs sensor readings onto an SQLite database, and a frontend dashboard that visualizes and manages backend data.
 
 # Project Structure
 This project consists of three directories:
