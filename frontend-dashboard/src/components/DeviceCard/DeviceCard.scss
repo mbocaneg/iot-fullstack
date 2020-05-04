@@ -1,0 +1,87 @@
+@import '../../assets/base.scss';
+
+.device-card {
+    width: 250px;
+    height: 170px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid rgb(231, 231, 231);
+
+    background-color: $main-color;
+    
+    font-weight: 100;
+    border-radius: 5%;
+    // box-shadow: 5px 5px 3px $shadow-color;
+
+
+    .device-card-subheader {
+        margin-top: 16px;
+        margin-left: 16px;
+        color: gray;
+        font-size: 16px;
+    }
+
+    .device-card-icon {
+        margin-top: 8px;
+        margin-left: 16px;
+        font-size: 16px;
+
+    }
+
+    .device-card-header {
+        width: 230px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .device-card-header-icon {
+            margin-top: 8px;
+            margin-left: 16px;
+            font-size: 24px;
+            
+        }
+        .device-card-header-text {
+            margin-top: 8px;
+            margin-left: 16px;
+            font-size: 32px;
+            font-weight: 200;
+            color: $highlight-color;
+
+            // font-family: 'Helvetica';
+        }
+
+    }
+    .device-card-text {
+        margin-top: 8px;
+        margin-left: 16px;
+        margin-right: 16px;
+        font-size: 14px;
+    }
+    .device-card-support-text {
+        margin-top: 8px;
+        margin-left: 16px;
+    
+        font-size: 13px;
+        font-weight: 200;
+
+        color: gray;
+    }
+}
+
+
+.device-card:hover {
+    background-color: transparentize($highlight-color, 0.4);
+
+    color: white;
+    .device-card-subheader, .device-card-support-text {
+        color: rgb(10, 10, 10);
+    }
+    .device-card-header-text {
+        color: $highlight-color;
+    }
+}

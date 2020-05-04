@@ -1,0 +1,72 @@
+@import '../../assets/base.scss';
+
+.home-page {
+
+    .title {
+        margin-left: 24px;
+        margin-top: 16px;
+
+        font-size: 18px;
+        font-weight: 200;
+
+        color: gray;
+        margin-bottom: 16px;
+    }
+
+    .home-summary {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+        .summary-widget {
+            width: 240px;
+            height: 160px;
+            background-color: $main-color;
+            border-radius: 5%;
+
+            margin: 24px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .summary-icon {
+                font-size: 48px;
+                margin-right: 16px;
+            }
+            .summary-details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .summary-property {
+                    color: gray;
+                    font-size: 24px;
+                    font-weight: 100;
+                }
+                .summary-value {
+                    color: $highlight-color;
+                    font-size: 64px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .summary-widget:hover {
+            background-color: transparentize($highlight-color, 0.4);
+
+            .summary-details {
+                .summary-property { color: white;}
+                .summary-value { color: white; }
+            }
+        }
+
+    }
+
+    .recent-readings-table {
+        margin-left: 24px;
+        height: 400px;   
+        overflow-y: scroll; 
+    }
+}

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serif:ital@0');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700');
+
+$main-color: rgb(237, 240, 233);
+// $main-color: rgb(90, 233, 24);
+
+// $highlight-color: rgba(10, 3, 102, 0.466);
+$highlight-color: rgb(62, 136, 43);
+$shadow-color: rgb(128, 167, 127);
+
+@mixin background-opacity($color, $opacity) {
+    background: rgba($color, $opacity);
+}
+
+@mixin color-opacity($color, $opacity) {
+    color: rgba($color, $opacity);
+}
+
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    // font-family: 'Montserrat';
+        // font-family: 'Comfortaa';
+}
+
+.header {
+    width: 100vw;
+    // background-color: rgb(38, 66, 97);
+    display: flex;
+    flex-direction: row;
+    background-color: $main-color;
+
+    // border-bottom: 1px solid rgb(212, 0, 255);
+
+    .header-lettering {
+        padding: 24px;
+        font-weight: 100;
+        font-size: 32px;
+        color: $highlight-color;
+        // color: transparentize($highlight-color, 0.4);
+        // color: black;
+    }
+}
+
+.title-lettering {
+    font-size: 18px;
+    color: rgb(145, 145, 145);
+    // color: $highlight-color;
+
+    font-weight: 200;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    // margin-top: 24px;
+    // margin-left: 24px;
+}
+
+table {
+    margin-top: 16px; 
+    border-collapse: collapse;
+}
+
+td {
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.table-identifier {
+    background-color: $highlight-color;
+    color: white;
+}
+.table-val {
+    /* color: rgb(134, 129, 129); */
+    background-color: $main-color;
+
+    color: black;
+}
+.table-header {
+    position: sticky;
+     top: 0; 
+     z-index: 0;
+}

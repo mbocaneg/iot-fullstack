@@ -1,0 +1,100 @@
+@import '../../assets/base.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sensor-card {
+    width: 256px;
+    height: 240px;
+
+    // box-shadow: 5px 5px 3px $shadow-color;
+
+    // padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $main-color;
+    font-weight: 100;
+    border-radius: 5%;
+
+    .sensor-icon {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .sensor-id {
+        // margin-top: 16px;
+        // margin-left: 16px;
+        color: rgb(134, 129, 129);
+        font-size: 16px;
+    }
+
+    .sensor-name {
+        margin-top: 8px;
+        // margin-left: 16px;
+        font-size: 24px;
+        color: $highlight-color;
+    }
+    
+    .sensor-data {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    
+
+        .sensor-value {
+            margin-top: 8px;
+            color: $highlight-color;
+            font-size: 56px;
+            margin-left: 8px;
+        }
+        .sensor-units {
+            color: $highlight-color;
+            margin-top: 8px;
+            // margin-left: 8px;
+            // margin-right: 16px;
+        
+            font-size: 16px;
+        }
+    }
+    
+    
+    .sensor-description {
+        // margin-top: 8px;
+        // margin-left: 16px;
+        // margin-right: 16px;
+        // margin-bottom: 16px;
+        margin-top: 8px;
+
+        color: black;
+
+        // color: rgb(134, 129, 129);
+        font-size: 14px;
+    }
+    
+    
+}
+
+.sensor-card:hover {
+    background-color: transparentize($highlight-color, 0.4);
+
+    .sensor-id{
+        color: black;
+    }
+    .sensor-units, .sensor-value, .sensor-description {
+        color: white;
+    }
+    .sensor-name {
+        color: $highlight-color;
+    }
+
+}
+
+

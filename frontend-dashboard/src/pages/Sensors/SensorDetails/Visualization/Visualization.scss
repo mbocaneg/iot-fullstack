@@ -1,0 +1,25 @@
+@import '../../../../assets/base.scss';
+
+.visualization-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+
+    .visualization-line-chart {
+        margin-left: 24px;
+        width: 70vw;
+        height: 60vh;
+    }
+    .visualization-table {
+        margin-top: 24px;
+        margin-left: 16px;   
+        height: 320px;   
+        overflow-y: scroll;  
+    }
+    @media screen and (max-width: 1200px) {
+        .visualization-table {
+            margin-left: 64px; 
+        }
+    }
+}

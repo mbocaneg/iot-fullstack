@@ -1,0 +1,110 @@
+@import '../../assets/base.scss';
+
+// $select-color-background: rgba(97, 49, 2, 0.589);
+// $select-color-background: rgba(201, 214, 18, 0.589);
+$select-color-background: $highlight-color;
+
+
+// $select-color-text: rgb(19, 18, 18);
+$select-color-text: white;
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    font-family: 'Ubuntu';
+    font-weight: 200;
+
+    .darken-page {
+        position: fixed;
+        z-index: 9;
+
+        height: 100%;
+        width: 100vw;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    }
+    
+    .spacer {
+        margin-right: 0px;
+
+        height: 100%;
+        width: 184px + 16px + 16px;
+    }
+    
+    .sidenav {
+    
+        // box-shadow: 2px 2px 2px rgb(173, 173, 173);
+    
+        // background-color: rgb(42, 68, 107);
+        background-color: $main-color;
+
+        height: 100%;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        z-index: 10;
+
+        
+        
+        ul {
+            // height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            
+            padding-top: 100px;
+            position: sticky;
+            top: 0;
+        }
+    
+        a {
+            list-style-type: none;
+            width: 184px;
+            height: 64px;
+            padding-left: 16px;
+            padding-right: 16px;
+    
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+    
+            text-decoration: none;
+            // color: rgb(209, 209, 209);
+            color: black;
+    
+        }
+    
+        .selected-link,
+        li:hover {
+            background-color: $select-color-background;
+            // background-color: transparentize($highlight-color, 0.4);
+            // color:rgb(38, 66, 97);
+            a {
+                color: $select-color-text;
+            }
+         }
+    
+         .close-icon {
+            width: 183px;
+            height: 64px;
+            padding-left: 16px;
+            padding-right: 16px;
+    
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+    
+            .menu-icon:hover {
+                color: $highlight-color;
+                cursor: pointer;
+            }
+        }
+    
+    }
+}
+

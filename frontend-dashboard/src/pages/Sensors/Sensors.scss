@@ -1,0 +1,11 @@
+@import '../../assets/base.scss';
+
+.sensors-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .sensor-item {
+        margin: 32px 24px;
+    }
+}

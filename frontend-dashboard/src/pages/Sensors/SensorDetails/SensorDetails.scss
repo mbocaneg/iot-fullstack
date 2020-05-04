@@ -1,0 +1,13 @@
+@import '../../../assets/base.scss';
+
+.sensor-details-page     {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+
+    .data > *{
+        margin-bottom: 64px;
+        margin-top: 64px;
+    }
+}
